@@ -9,7 +9,7 @@ def main():
     
     # 1. Vérifier les fichiers raw disponibles
     raw_files = list(processor.raw_dir.glob("news_*.csv"))
-    print(f"\nFichiers raw disponibles :")
+    print("\nFichiers raw disponibles :")
     for f in raw_files:
         print(f"- {f.name}")
 

@@ -1,6 +1,6 @@
 from datetime import datetime
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 import pandas as pd
 from pydantic import BaseModel
 from news_vector_search.config import settings
@@ -120,7 +120,7 @@ def main():
     processor = DataProcessor()
     try:
         articles = processor.process_articles()
-        print(f"\nStatistiques finales:")
+        print("\nStatistiques finales:")
         print(f"Nombre total d'articles traités: {len(articles)}")
         
         # Affichage des 3 premiers articles
